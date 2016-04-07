@@ -47,7 +47,7 @@
 - (IBAction)showLoginView:(id)sender {
     self.helloLabel.text = [NSString stringWithFormat:@"You're trying to login"];
     
-    login = [[LoginView alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, 320, 320)];
+    login = [[LoginView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x +120, self.frame.origin.y +120, 320, 320)];
     [self.view addSubview:login];
 }
 
